@@ -20,7 +20,7 @@ api = tweepy.API(auth)
 Account = os.getenv("tw_name1")
 
 #前回からの差分件数によりcountを変更（１日20~50件程度）
-tweets = api.user_timeline(Account, count=200, page=1)
+tweets = api.user_timeline(Account, count=10, page=1)
 
 config = {
   'host' : os.getenv("host"),
